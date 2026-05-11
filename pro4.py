@@ -1,13 +1,10 @@
 import pandas as pd
 
-# Load dataset
 df = pd.read_csv("training_data.csv")
 
-# Features and target
 X = df.iloc[:, :-1]
 y = df.iloc[:, -1]
 
-# Find-S Algorithm
 hypothesis = None
 
 for i in range(len(X)):
